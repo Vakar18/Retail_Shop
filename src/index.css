@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+* {
+  font-family: "Poppins", sans-serif !important;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #0d1117;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  background-color: #0d1117; /* Assuming neutral-950 corresponds to this color */
+  background: radial-gradient(
+    ellipse 80% 80% at 50% 0%,
+    rgba(120, 119, 198, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.MuiPaginationItem-root {
+  color: white !important;
+}
+
+.MuiInputBase-input,
+.MuiFormLabel-root {
+  color: white !important;
+}
+
+
+.MuiPaper-root {
+  background-color: #0d1117 !important;
+}
+
+
+.MuiDialogContent-root,
+.MuiDialogTitle-root {
+  color: white !important;
+}
+
+
+.MuiInputBase-input,
+.MuiInputLabel-root,
+.MuiFormLabel-root {
+  color: white !important;
+}
+
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+
+.MuiTextField-root .MuiSelect-root:focus {
+  background-color: #0d1117 !important;
 }
